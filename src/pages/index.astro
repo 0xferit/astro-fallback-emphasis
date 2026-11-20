@@ -1,0 +1,21 @@
+---
+import { Font } from "astro:assets";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fallback emphasis</title>
+    <Font cssVariable="--font-space-mono" />
+    <style>
+      body {
+        font-family: var(--font-space-mono);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="regular">Regular text.</p>
+    <p><strong id="bold">Bold text.</strong></p>
+    <p><em id="italic">Italic text.</em></p>
+  </body>
+</html>
